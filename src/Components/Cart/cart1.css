@@ -1,0 +1,84 @@
+.cartCont{
+display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+    margin: 2em 1em;
+}
+.red{
+    color: red;
+}
+#removeCart{
+    background-color: transparent;
+    border: none;
+}
+#selected_car{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5em;
+    box-shadow: 0px 0px 8px rgba(44, 43, 43, 0.2);
+    border-radius: 0.5em;
+    width: 40%;
+    padding: 0.5em;
+    margin: 0em 3em;
+    background-color: #fff;
+}
+#selected_car img{
+    width: 40%;
+    margin:0 auto;
+}
+#cart_image{
+    display: flex;
+    justify-content: center;
+}
+
+#carDetailsMahdi{
+    text-align: center;
+}
+#booking_Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+}
+.formGroup label, .formGroup input{
+    text-align: center;
+    display: block;
+    margin: 0.1em 0;
+}
+
+#submitButtonMahdi{
+    width: calc(100% + 1em);
+    transform: translateY(0.5em);
+    border-end-end-radius: 0.5em;
+    border-end-start-radius: 0.5em;
+    border: none;
+    outline: none;
+    padding: 1em 0;
+    color: brown;
+    background-color: #d8d8d8;
+    background-color: var(--s_teal);
+    transition: 0.3s ease-in-out;
+}
+#submitButtonMahdi:hover{
+    background-color: #808080;
+    color: white;
+    background-color: var(--s_dark);
+
+
+}
+
+@media all and (max-width:480px) {
+#selected_car{
+    width: 70%;
+}
+.cartCont{
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+}
